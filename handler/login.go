@@ -13,7 +13,7 @@ func GetLogin(ctx *fiber.Ctx) error {
 
 	lindex := view.LoginIndex(fromProtected)
 	login := view.Login(
-		" | Login", fromProtected, false, flash.Get(ctx), lindex,
+		"/login", fromProtected, false, flash.Get(ctx), lindex,
 	)
 
 	handler := adaptor.HTTPHandler(templ.Handler(login))

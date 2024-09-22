@@ -51,7 +51,7 @@ func App(page string, fromProtected, isError bool, msg fiber.Map, username strin
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			if page != "/home" {
+			if page != "/home" && page != "/register" && page != "/login" {
 				templ_7745c5c3_Err = component.Footer().Render(ctx, templ_7745c5c3_Buffer)
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
@@ -61,7 +61,7 @@ func App(page string, fromProtected, isError bool, msg fiber.Map, username strin
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			if page != "/home" {
+			if page != "/home" && page != "/register" && page != "/login" {
 				_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"drawer-side z-40\" style=\"scroll-behavior: smooth;\"><label for=\"my-drawer-2\" aria-label=\"close sidebar\" class=\"drawer-overlay\"></label><aside class=\"bg-base-100 min-h-screen w-60\"><div class=\"bg-base-100 sticky top-0 z-20 items-center gap-2 bg-opacity-90 px-4 py-2 backdrop-blur lg:flex \"><a class=\"flex-0 btn btn-ghost px-2\"><svg width=\"32\" height=\"32\" viewBox=\"0 0 415 415\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"82.5\" y=\"290\" width=\"250\" height=\"125\" rx=\"62.5\" fill=\"#1AD1A5\"></rect><circle cx=\"207.5\" cy=\"135\" r=\"130\" fill=\"black\" fill-opacity=\".3\"></circle><circle cx=\"207.5\" cy=\"135\" r=\"125\" fill=\"white\"></circle><circle cx=\"207.5\" cy=\"135\" r=\"56\" fill=\"#FF9903\"></circle></svg><div class=\"font-title inline-flex text-lg md:text-2xl\">zirp</div></a></div><ul class=\"menu px-4 py-0 bg-base-100\"><!-- Sidebar content here --><li><a><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25\"></path></svg> Homepage</a></li><li><a><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0\"></path></svg> Notification</a></li></ul></aside></div>")
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err

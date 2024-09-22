@@ -31,7 +31,7 @@ func HomeIndex(fromProtected bool) templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"hero min-h-screen\" style=\"background-image: url(/forest.jpg);\"><div class=\"hero-overlay bg-opacity-60\"></div><div class=\"hero-content text-neutral-content text-center\"><div class=\"max-w-md\"><div class=\"overflow-auto w-5/5 flex items-center\"><div><h1 class=\"mb-5 text-5xl font-bold\">Hello there to zirp, <img src=\"/Designer.png\" class=\"inline\" width=\"200\"> an instant message platform.</h1></div></div><p class=\"mb-5\">To contribute just register and log in.></p><div class=\"space-x-4\"><a hx-swap=\"transition:true\" href=\"/login\" class=\"btn btn-primary\">Login</a> <a hx-swap=\"transition:true\" href=\"/register\" class=\"btn btn-secondary\">Register</a></div></div></div></div>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"hero min-h-screen\" style=\"background-image: url(/forest.jpg);\"><div class=\"hero-overlay bg-opacity-60\"></div><div class=\"hero-content text-neutral-content text-center\"><div class=\"max-w-md\"><div class=\"overflow-auto w-5/5 flex items-center\"><div><h1 class=\"mb-5 text-5xl font-bold\">Hello there to zirp, <img src=\"/Designer.png\" class=\"inline\" width=\"200\"> an instant message platform.</h1></div></div><p class=\"mb-5\">To contribute just register and log in.</p><div class=\"space-x-4\"><a hx-swap=\"transition:true\" href=\"/login\" class=\"btn btn-primary\">Login</a> <a hx-swap=\"transition:true\" href=\"/register\" class=\"btn btn-secondary\">Register</a></div></div></div></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -87,13 +87,3 @@ func Home(
 		return templ_7745c5c3_Err
 	})
 }
-
-// templ Home(name string) {templ Home(name string) {
-// 	@layout.App() {
-// 		<div>Hello { name }</div>
-// 	}
-// }
-// 	@layout.App() {
-// 		<div>Hello { name }</div>
-// 	}
-// }

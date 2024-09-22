@@ -26,6 +26,7 @@ func SetupRoutes(app *fiber.App) {
 
 	app.Get("/home", flagsMiddleware, GetHome)
 	app.Get("/login", flagsMiddleware, GetLogin)
+	app.Get("/register", flagsMiddleware, GetRegister)
 
 	// router := app.Group("/")
 	// NewHomeHandler(router, nil)
